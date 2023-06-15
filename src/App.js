@@ -23,9 +23,7 @@ export default function App() {
       <input
         type="value"
         // value={inp}
-        onKeyUp={(e) => {
-          debounceFn(e);
-        }}
+        onKeyUp={debounceFn}
       />
       <p>Debounce Text: {value}</p>
     </div>
