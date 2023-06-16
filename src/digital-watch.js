@@ -25,5 +25,16 @@ export const DigitalWatch = () => {
     };
   }, []);
 
-  return <div style={{ fontFamily: 'Orbitron', fontSize: 40 }}>{time}</div>;
+  return (
+    <div
+      style={{
+        fontFamily: 'Orbitron',
+        fontSize: 40,
+        border: '5px solid',
+        textAlign: 'center',
+      }}
+    >
+      {time}
+    </div>
+  );
 };
