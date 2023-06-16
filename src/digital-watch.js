@@ -30,11 +30,26 @@ export const DigitalWatch = () => {
       style={{
         fontFamily: 'Orbitron',
         fontSize: 40,
-        border: '5px solid',
         textAlign: 'center',
       }}
     >
-      {time}
+      <div
+        style={{
+          margin: '20px 0',
+        }}
+      >
+        Digital Clock
+      </div>
+      <div
+        style={{
+          fontFamily: 'Orbitron',
+          fontSize: 40,
+          border: '5px solid',
+          textAlign: 'center',
+        }}
+      >
+        {time}
+      </div>
     </div>
   );
 };
