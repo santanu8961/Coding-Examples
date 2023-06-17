@@ -20,9 +20,8 @@ export const DigitalWatch = () => {
           : date.getSeconds();
 
       setcolor(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
-      console.log(cl);
       setTime(hours + ' : ' + minutes + ' : ' + seconds);
-    }, 1000);
+    }, 1);
     return () => {
       clearInterval(interval);
     };
