@@ -21,7 +21,7 @@ export const DigitalWatch = () => {
 
       setcolor(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
       setTime(hours + ' : ' + minutes + ' : ' + seconds);
-    }, 1);
+    }, 1000);
     return () => {
       clearInterval(interval);
     };
