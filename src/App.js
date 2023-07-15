@@ -6,7 +6,7 @@ export default function App() {
   const [inp, setinp] = React.useState('');
   const delayConfigureFn = (cb, delay) => {
     let timer;
-    clearInterval(timer);
+    clearTimeout(timer);
     return (...args) => {
       timer = setTimeout(() => {
         cb(...args);
